@@ -1,5 +1,5 @@
-# NMRDownload自述文件
-NMRDownload是我自己编写的一个批处理脚本。
+# NMRDownload-Batch自述文件
+NMRDownload-Batch是我自己编写的一个批处理脚本。
 
 在使用之前请务必更改文件中\*\*\*部分。
 
