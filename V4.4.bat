@@ -1,56 +1,56 @@
 @echo off
-title ***GroupºË´ÅÊý¾ÝÏÂÔØV4.4 By Kaisoku
-echo ÄãºÃ£¬%username%£¡
-echo ±¾³ÌÐò¸üÐÂÈÕÆÚ£º2020/12/22
+title ***Groupæ ¸ç£æ•°æ®ä¸‹è½½V4.4 By Kaisoku
+echo ä½ å¥½ï¼Œ%username%ï¼
+echo æœ¬ç¨‹åºæ›´æ–°æ—¥æœŸï¼š2020/12/22
 echo.
-echo Ê¹ÓÃËµÃ÷£º
-echo ±¾³ÌÐò»áÔÚ×ÀÃæ½¨Á¢¡°NMR¡±ÎÄ¼þ¼Ð£¬²¢°´ÄãµÄÐèÒª½«Bruker·þÎñÆ÷ÉÏÒÔÄãÃû×ÖËõÐ´¿ªÍ·µÄºË´ÅÊý¾ÝÍ¬²½µ½ÒÔÄãÃû×ÖËõÐ´ÃüÃûµÄÎÄ¼þ¼ÐÀïÃæ¡£
-echo ÔËÐÐÊ±¼äÈ¡¾öÓÚÊý¾ÝÁ¿¡¢ÍøÂçÖÊÁ¿ºÍÓ²ÅÌÐ´ÈëËÙ¶È£¬Í¨³£ÔÚ2-30·ÖÖÓ¡£
-echo Ö»¶Ô***¿ÎÌâ×éÓÐÐ§£¬±ØÐëÊ¹ÓÃÐ£Ô°Íø£¨ÊµÑéÊÒºÍËÞÉáÇø¾ù¿ÉÊ¹ÓÃ£©¡£
-::ÔÚÍøÂçÉÏ×¢²á
+echo ä½¿ç”¨è¯´æ˜Žï¼š
+echo æœ¬ç¨‹åºä¼šåœ¨æ¡Œé¢å»ºç«‹â€œNMRâ€æ–‡ä»¶å¤¹ï¼Œå¹¶æŒ‰ä½ çš„éœ€è¦å°†BrukeræœåŠ¡å™¨ä¸Šä»¥ä½ åå­—ç¼©å†™å¼€å¤´çš„æ ¸ç£æ•°æ®åŒæ­¥åˆ°ä»¥ä½ åå­—ç¼©å†™å‘½åçš„æ–‡ä»¶å¤¹é‡Œé¢ã€‚
+echo è¿è¡Œæ—¶é—´å–å†³äºŽæ•°æ®é‡ã€ç½‘ç»œè´¨é‡å’Œç¡¬ç›˜å†™å…¥é€Ÿåº¦ï¼Œé€šå¸¸åœ¨2-30åˆ†é’Ÿã€‚
+echo åªå¯¹***è¯¾é¢˜ç»„æœ‰æ•ˆï¼Œå¿…é¡»ä½¿ç”¨æ ¡å›­ç½‘ï¼ˆå®žéªŒå®¤å’Œå®¿èˆåŒºå‡å¯ä½¿ç”¨ï¼‰ã€‚
+::åœ¨ç½‘ç»œä¸Šæ³¨å†Œ
 net use \\***.***.***.*** "***password" /user:"***username" >nul
-::ÉèÖÃÔ´Â·¾¶
+::è®¾ç½®æºè·¯å¾„
 set WayIn=***
-::ÉèÖÃÄ¿±êÂ·¾¶
-set WayOut=%HOMEPATH%\Desktop\NMR\
-::ÉèÖÃÒ»¸öTempDate£¬Ä¬ÈÏÎª½ñÌì¡£ÓÉÓÚÃüÁîÐÐ¶ÔÊý×Ö´¦ÀíµÄÌØÐÔ£¬±ØÐëÈç´Ë²ÅÄÜµÃµ½Ê®½øÖÆÊý¡£
+::è®¾ç½®ç›®æ ‡è·¯å¾„
+set WayOut=%HOMEPATH%\Desktop\NMR
+::è®¾ç½®ä¸€ä¸ªTempDateï¼Œé»˜è®¤ä¸ºä»Šå¤©ã€‚ç”±äºŽå‘½ä»¤è¡Œå¯¹æ•°å­—å¤„ç†çš„ç‰¹æ€§ï¼Œå¿…é¡»å¦‚æ­¤æ‰èƒ½å¾—åˆ°åè¿›åˆ¶æ•°ã€‚
 set /a y=%date:~0,4%,m=1%date:~5,2%-100,d=1%date:~8,2%-100
 set /a TempDate=%y%*10000+%m%*100+%d%
 echo.
 echo ================================================================================
-set /p Name=ÇëÊäÈëÄãµÄÐÕÃûËõÐ´£¨²»Çø·Ö´óÐ¡Ð´£©£º
+set /p Name=è¯·è¾“å…¥ä½ çš„å§“åç¼©å†™ï¼ˆä¸åŒºåˆ†å¤§å°å†™ï¼‰ï¼š
 echo.
-echo ºÃÚÀ£¡ÏÖÔÚÎÒÖªµÀÄãÊÇ%Name%ÁË£¡½ñÌìÊÇ %TempDate% £¡
-echo ±¾³ÌÐò¿ÉÒÔÍ¬²½
-echo 1£ºÈ«²¿ºË´ÅÊý¾Ý£¨ËÙ¶ÈÂý£¬½ö½¨Òé³õ´ÎÊ¹ÓÃÊ±ÔËÐÐ£©
-echo 2£ºµ±ÔÂºË´ÅÊý¾Ý
-echo 3£º½ñÈÕºË´ÅÊý¾Ý
-echo 4£º×î½ü3ÈÕÄÚµÄºË´ÅÊý¾Ý¡­¡­¡­¡­¡­¡­¡­¡­¡­¡­¡­¡­Ò²¾ÍÊÇÇ°Ìì¡¢×òÌì¡¢½ñÌìÀ²~
-echo 5£º×î½ü7ÈÕÄÚµÄºË´ÅÊý¾Ý¡­¡­¡­¡­¡­¡­¡­¡­¡­¡­¡­¡­Ò²¾ÍÊÇ¹ýÈ¥µÄÒ»ÖÜÀ²~
-echo 6£º×Ô¶¨Òå×î½ü¼¸ÈÕÄÚµÄºË´ÅÊý¾Ý
-echo 7£ºÖ¸¶¨Ä³Ò»ÌìµÄºË´ÅÊý¾Ý
+echo å¥½è¯¶ï¼çŽ°åœ¨æˆ‘çŸ¥é“ä½ æ˜¯%Name%äº†ï¼ä»Šå¤©æ˜¯ %TempDate% ï¼
+echo æœ¬ç¨‹åºå¯ä»¥åŒæ­¥
+echo 1ï¼šå…¨éƒ¨æ ¸ç£æ•°æ®ï¼ˆé€Ÿåº¦æ…¢ï¼Œä»…å»ºè®®åˆæ¬¡ä½¿ç”¨æ—¶è¿è¡Œï¼‰
+echo 2ï¼šå½“æœˆæ ¸ç£æ•°æ®
+echo 3ï¼šä»Šæ—¥æ ¸ç£æ•°æ®
+echo 4ï¼šæœ€è¿‘3æ—¥å†…çš„æ ¸ç£æ•°æ®â€¦â€¦â€¦â€¦â€¦â€¦â€¦â€¦â€¦â€¦â€¦â€¦ä¹Ÿå°±æ˜¯å‰å¤©ã€æ˜¨å¤©ã€ä»Šå¤©å•¦~
+echo 5ï¼šæœ€è¿‘7æ—¥å†…çš„æ ¸ç£æ•°æ®â€¦â€¦â€¦â€¦â€¦â€¦â€¦â€¦â€¦â€¦â€¦â€¦ä¹Ÿå°±æ˜¯è¿‡åŽ»çš„ä¸€å‘¨å•¦~
+echo 6ï¼šè‡ªå®šä¹‰æœ€è¿‘å‡ æ—¥å†…çš„æ ¸ç£æ•°æ®
+echo 7ï¼šæŒ‡å®šæŸä¸€å¤©çš„æ ¸ç£æ•°æ®
 echo.
-set /p Run=ÇëÑ¡ÔñÒ»¸ö¹¦ÄÜ£¨1~7£©£º
-if ¡°%Run%¡±==¡°1¡± goto 1
-if ¡°%Run%¡±==¡°2¡± goto 2
-if ¡°%Run%¡±==¡°2¡± goto 2
-if ¡°%Run%¡±==¡°3¡± goto 3
-if ¡°%Run%¡±==¡°4¡± (
+set /p Run=è¯·é€‰æ‹©ä¸€ä¸ªåŠŸèƒ½ï¼ˆ1~7ï¼‰ï¼š
+if â€œ%Run%â€==â€œ1â€ goto 1
+if â€œ%Run%â€==â€œ2â€ goto 2
+if â€œ%Run%â€==â€œ2â€ goto 2
+if â€œ%Run%â€==â€œ3â€ goto 3
+if â€œ%Run%â€==â€œ4â€ (
 	set /a Days=2
 	goto Run
 	)
-if ¡°%Run%¡±==¡°5¡± (
+if â€œ%Run%â€==â€œ5â€ (
 	set /a Days=6
 	goto Run
 	)
-if ¡°%Run%¡±==¡°6¡± goto 6
-if ¡°%Run%¡±==¡°7¡± goto 7
+if â€œ%Run%â€==â€œ6â€ goto 6
+if â€œ%Run%â€==â€œ7â€ goto 7
 color 4F
-echo àæ£¬ÄãÁ¬1234567¶¼²»»áÊäÂð£¿
+echo å™«ï¼Œä½ è¿ž1234567éƒ½ä¸ä¼šè¾“å—ï¼Ÿ
 pause
 exit
 
-::XcopyÊ¹ÓÃ/dÈ·±£²»»áÖØ¸´¶ÁÐ´¡£
+::Xcopyä½¿ç”¨/dç¡®ä¿ä¸ä¼šé‡å¤è¯»å†™ã€‚
 
 :1
 for /d %%a in (%WayIn%\%Name%-*) do ( xcopy /d/e/y/k "%%~a" "%WayOut%\%Name%\%%~nxa\" && rd /s/q "%%~a" )
@@ -69,12 +69,12 @@ exit
 
 :6
 echo.
-set /p Days=ÄãÒªÍ¬²½×î½ü¼¸ÈÕÄÚµÄºË´ÅÊý¾ÝÄØ£¿£¨×¢Òâ£º½ñÌìÎª1£¬×òÌìÎª2£¬Ç°ÌìÎª3£¬ÒÀ´ËÀàÍÆ£¬±ØÐëÊäÈëÒ»¸öÕýÕûÊý£©
+set /p Days=ä½ è¦åŒæ­¥æœ€è¿‘å‡ æ—¥å†…çš„æ ¸ç£æ•°æ®å‘¢ï¼Ÿï¼ˆæ³¨æ„ï¼šä»Šå¤©ä¸º1ï¼Œæ˜¨å¤©ä¸º2ï¼Œå‰å¤©ä¸º3ï¼Œä¾æ­¤ç±»æŽ¨ï¼Œå¿…é¡»è¾“å…¥ä¸€ä¸ªæ­£æ•´æ•°ï¼‰
 set /a Days=Days-1
 goto Run
 exit
 
-::ÔÚÖ®Ç°µÄ°æ±¾ÖÐ×¢Òâµ½£¬Xcopy /d:m-d-yÈÔ»á±éÀúÈ«²¿ÎÄ¼þ£¬Õâ»áºÄ·Ñ´óÁ¿Ê±¼ä£¨ÌØ±ðÊÇºË´ÅÊý¾Ý½Ï¶àÊ±£©¡£¿¼ÂÇµ½ºË´ÅÊý¾ÝÎÄ¼þÃüÃûµÄ¹æÂÉÐÔ£¬Ê¹ÓÃÒ»¸öÌìÊýµ¹ÊýÄ£¿éÀ´ÊµÏÖ¡£Run¡¢D0¡¢D²¿·Ö¹²Í¬¹¹³ÉÁËÕâ¸öÄ£¿é£¬ÆäÖÐRunÎª¿½±´Ä£¿é£¬DÎªÈÕÊýµÝ¼õÄ£¿é£¬D0ÓÃÀ´¿çÔÂ·ÝÐÞÕý¡£ÔÝÎÞ¼Æ»®Ö§³ÖÈòÄê¡£
+::åœ¨ä¹‹å‰çš„ç‰ˆæœ¬ä¸­æ³¨æ„åˆ°ï¼ŒXcopy /d:m-d-yä»ä¼šéåŽ†å…¨éƒ¨æ–‡ä»¶ï¼Œè¿™ä¼šè€—è´¹å¤§é‡æ—¶é—´ï¼ˆç‰¹åˆ«æ˜¯æ ¸ç£æ•°æ®è¾ƒå¤šæ—¶ï¼‰ã€‚è€ƒè™‘åˆ°æ ¸ç£æ•°æ®æ–‡ä»¶å‘½åçš„è§„å¾‹æ€§ï¼Œä½¿ç”¨ä¸€ä¸ªå¤©æ•°å€’æ•°æ¨¡å—æ¥å®žçŽ°ã€‚Runã€D0ã€Déƒ¨åˆ†å…±åŒæž„æˆäº†è¿™ä¸ªæ¨¡å—ï¼Œå…¶ä¸­Runä¸ºæ‹·è´æ¨¡å—ï¼ŒDä¸ºæ—¥æ•°é€’å‡æ¨¡å—ï¼ŒD0ç”¨æ¥è·¨æœˆä»½ä¿®æ­£ã€‚æš‚æ— è®¡åˆ’æ”¯æŒé—°å¹´ã€‚
 
 :Run
 set /a TempDate=%y%*10000+%m%*100+%d%
@@ -103,25 +103,25 @@ if %d% equ 0 (
 :7
 set Choose=Null
 echo.
-set /p SetDate=ÄãÒªÍ¬²½ÄÄÒ»ÌìµÄºË´ÅÊý¾Ý£¨YYYYMMDD£¬8Î»Êý×Ö£©£º
+set /p SetDate=ä½ è¦åŒæ­¥å“ªä¸€å¤©çš„æ ¸ç£æ•°æ®ï¼ˆYYYYMMDDï¼Œ8ä½æ•°å­—ï¼‰ï¼š
 for /d %%a in (%WayIn%\%Name%-%SetDate%-*) do ( xcopy /d/e/y/k "%%~a" "%WayOut%\%Name%\%%~nxa\" && rd /s/q "%%~a" )
 cls
-echo Í¬²½ÁË%SetDate%µÄºË´ÅÊý¾Ý£¬»¹ÐèÒªÍ¬²½ÆäËûÈÕÆÚÂð£¿
-set /p Choose=ÊäÈë¡úY/y¡ûÒÔ¼ÌÐøÍ¬²½£¬»òÕß°´¡ú»Ø³µ¼ü¡ûÖ±½ÓÍË³ö±¾³ÌÐò£º
-if /i ¡°%Choose%¡±==¡°y¡± goto 7
+echo åŒæ­¥äº†%SetDate%çš„æ ¸ç£æ•°æ®ï¼Œè¿˜éœ€è¦åŒæ­¥å…¶ä»–æ—¥æœŸå—ï¼Ÿ
+set /p Choose=è¾“å…¥â†’Y/yâ†ä»¥ç»§ç»­åŒæ­¥ï¼Œæˆ–è€…æŒ‰â†’å›žè½¦é”®â†ç›´æŽ¥é€€å‡ºæœ¬ç¨‹åºï¼š
+if /i â€œ%Choose%â€==â€œyâ€ goto 7
 exit
 
 :Finish
 cls
 color 9F
 echo.
-echo ËùÓÐÄãÒªµÄºË´ÅÊý¾Ý¶¼ÒÑ¾­Í¬²½ÖÁ ×ÀÃæ\NMR\%Name%\ ÎÄ¼þ¼ÐÏÂÃæÁË£¡
+echo æ‰€æœ‰ä½ è¦çš„æ ¸ç£æ•°æ®éƒ½å·²ç»åŒæ­¥è‡³ æ¡Œé¢\NMR\%Name%\ æ–‡ä»¶å¤¹ä¸‹é¢äº†ï¼
 echo.
-echo Èç¹ûÃ»ÕÒµ½£¬¾ÍËµÃ÷ÏÂÃæ»¹Ã»´«ÉÏÀ´£¬ÇëÉÔºóÔÙÔËÐÐ±¾³ÌÐò¡£
+echo å¦‚æžœæ²¡æ‰¾åˆ°ï¼Œå°±è¯´æ˜Žä¸‹é¢è¿˜æ²¡ä¼ ä¸Šæ¥ï¼Œè¯·ç¨åŽå†è¿è¡Œæœ¬ç¨‹åºã€‚
 echo.
-echo ¶Ô±¾³ÌÐòÓÐÈÎºÎÎÊÌâ£¬Çë¼°Ê±ÏòÎÒ·´À¡£¡
+echo å¯¹æœ¬ç¨‹åºæœ‰ä»»ä½•é—®é¢˜ï¼Œè¯·åŠæ—¶å‘æˆ‘åé¦ˆï¼
 echo.
-echo ¸ÐÐ»Ê¹ÓÃ£¬×£ÄãÊµÑéË³Àû£¡
+echo æ„Ÿè°¢ä½¿ç”¨ï¼Œç¥ä½ å®žéªŒé¡ºåˆ©ï¼
 echo.
 pause
 exit
@@ -130,13 +130,13 @@ exit
 cls
 color 9F
 echo.
-echo ½ØÖ¹ÖÁ %TempDate% µÄºË´ÅÊý¾Ý¶¼ÒÑ¾­Í¬²½ÖÁ ×ÀÃæ\NMR\%Name%\ ÎÄ¼þ¼ÐÏÂÃæÁË£¡
+echo æˆªæ­¢è‡³ %TempDate% çš„æ ¸ç£æ•°æ®éƒ½å·²ç»åŒæ­¥è‡³ æ¡Œé¢\NMR\%Name%\ æ–‡ä»¶å¤¹ä¸‹é¢äº†ï¼
 echo.
-echo Èç¹ûÉÏÃæÏÔÊ¾µÄÈÕÆÚÓëÄãÆÚÍûµÄ²»·û£¬ÇëÖØÐÂÔËÐÐ±¾³ÌÐò²¢ÊäÈëÊÊµ±µÄÌìÊý²ÎÊý¡£
+echo å¦‚æžœä¸Šé¢æ˜¾ç¤ºçš„æ—¥æœŸä¸Žä½ æœŸæœ›çš„ä¸ç¬¦ï¼Œè¯·é‡æ–°è¿è¡Œæœ¬ç¨‹åºå¹¶è¾“å…¥é€‚å½“çš„å¤©æ•°å‚æ•°ã€‚
 echo.
-echo ¶Ô±¾³ÌÐòÓÐÈÎºÎÎÊÌâ£¬Çë¼°Ê±ÏòÎÒ·´À¡£¡
+echo å¯¹æœ¬ç¨‹åºæœ‰ä»»ä½•é—®é¢˜ï¼Œè¯·åŠæ—¶å‘æˆ‘åé¦ˆï¼
 echo.
-echo ¸ÐÐ»Ê¹ÓÃ£¬×£ÄãÊµÑéË³Àû£¡
+echo æ„Ÿè°¢ä½¿ç”¨ï¼Œç¥ä½ å®žéªŒé¡ºåˆ©ï¼
 echo.
 pause
 exit
